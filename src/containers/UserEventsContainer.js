@@ -10,11 +10,7 @@ class UserEventsContainer extends React.Component {
         let filteredEvents = joinedEvents.filter(event=> parseInt(event.user.id) === parseInt(this.props.currentUser.id))
         return (
             <div className="ui grid container">
-                {/* <div className="row">
-                    <div className="col-md-4"> */}
-                        {filteredEvents.map((object, index) => <UserEventDisplay event={object.event} key={index} currentUser={this.props.currentUser}/>)}
-                    {/* </div>
-                </div> */}
+                {filteredEvents.map((object, index) => <UserEventDisplay event={object.event} key={index} currentUser={this.props.currentUser}/>)}
             </div>
             );
     }
@@ -22,11 +18,3 @@ class UserEventsContainer extends React.Component {
  
 export default UserEventsContainer;
 
-//prior to me doing grid
-{/* <div className="container-fluid d-flex justify-content-center">
-<div className="row">
-    <div className="col-md-4">
-        {filteredEvents.map((object, index) => <UserEventDisplay event={object.event} key={index} currentUser={this.props.currentUser}/>)}
-    </div>
-</div>
-</div> */}
