@@ -16,6 +16,7 @@ class UserEventsDisplay extends React.Component{
                         <p className='card-text text-secondary'>Date: {date}</p>
                         <p className='card-text text-secondary'>Located at: {location}</p>
                         <p className='card-text text-secondary'>{description}</p>
+                        <button>Remove RSVP</button>
                     </div>
                 </div>
             </div>
@@ -24,14 +25,4 @@ class UserEventsDisplay extends React.Component{
 }
 
 export default UserEventsDisplay
-            
-            // original format
-            // <div>
-            //     <img src={image_url} alt={title}/>
-            //     <h4 className='card-title'>{title} - Price: {price}</h4>
-            //     <p>Date: {date}</p>
-            //     <p>Located at: {location}</p>
-            //     <p>{description}</p>
-                
-            // </div>
 
