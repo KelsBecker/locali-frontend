@@ -22,7 +22,7 @@ Thanks to [Daniel Urbina](https://github.com/danielxurbina) who partnered with m
 
 
 ## Inspiration
-I do not own the rights to any of the images included in this repository. All of these images were found using a standard google searches. 
+I do not own the rights to any of the images included in this repository. All of these images were found using standard google searches. 
 
 Other web applications that provided inspiration are:
 - [eventbrite](https://www.eventbrite.com/)
