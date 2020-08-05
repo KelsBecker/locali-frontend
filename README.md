@@ -11,6 +11,12 @@ The goal of this project was to allow communites to connect with each other in c
 - Coming Soon! 😃 
 
 
+## Technologies
+- React/JavaScript
+- Ruby on Rails for [server side](https://github.com/KelsBecker/locali-backend)
+- PostgreSQL Database
+- CSS including Semantic UI
+
 ## Contributors
 Thanks to [Daniel Urbina](https://github.com/danielxurbina) who partnered with me to create this project.
 
