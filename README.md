@@ -30,7 +30,7 @@ Other web applications that provided inspiration are:
 
 
 ## Contact
-I would love to here from you!
+I would love to hear from you!
 - [Email](kelly.lynn.becker@gmail.com)
 - [LinkedIn](https://www.linkedin.com/in/kelly-lynn-becker/)
 
