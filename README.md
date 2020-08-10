@@ -1,3 +1,5 @@
+![Locali](src/visuals/locali.png)
+
 ## Description
 Locali is a web application that allows event loving users to browse events, create their own unique events, and rsvp to events they wish to attend.
 The goal of this project was to allow communites to connect with each other in creative and positive ways. 
