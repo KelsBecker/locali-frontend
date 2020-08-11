@@ -150,24 +150,32 @@ class App extends React.Component{
       .then(response => response.json())
     }
 
+    findUsersEvents = (events) => {
+      if(this.state.currentUser){
+      console.log(events.map(data => data.attributes).filter(event => parseInt(event.user.id) === parseInt(this.state.currentUser.id)))
+      currentUserEvents = events.map(data => data.attributes).filter(event => parseInt(event.user.id) === parseInt(this.state.currentUser.id))
+      }
+    }
+
   render(){
     let Events = this.state.events.filter(event => event.attributes.title.toLowerCase().includes(this.state.sort.toLowerCase()))
+    this.findUsersEvents(this.state.events)
     this.sortOptions(Events)
+    console.log('correct??', currentUserEvents)
     return (
       <div className="App">
         <NavBar currentUser={this.state.currentUser} handleLogout={this.handleLogout}/>
         <Switch >
           <Route path='/profile/:id' render={(props) => <ProfilePage {...props} 
             users={this.state.users} 
-            events={Events} 
+            events={this.state.events} 
             currentUser={this.state.currentUser} 
             updateCurrentUser={this.updateCurrentUser}/>} 
           /> 
           <Route path='/details/:id' render={(props) => <EventDetails {...props} 
             currentUser={this.state.currentUser} 
             deleteEvent={this.deleteEvent} 
-            updateEvent={this.updateEvent}
-            currentUserEvents ={currentUserEvents}/> } 
+            updateEvent={this.updateEvent}/> } 
           /> 
           <Route path='/events' render={(props) => <UserEvents {...props} 
             joinedEvents={this.state.joinedEvents} 
