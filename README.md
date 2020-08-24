@@ -6,7 +6,7 @@ The goal of this project was to allow communites to connect with each other in c
 
 
 ## Video Demo
-- Coming Soon! 😃 
+- Enjoy a tour of [Locali](https://youtu.be/i3ApHHEiH8E) 
 
 
 ## Live Demo
