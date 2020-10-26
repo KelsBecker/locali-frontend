@@ -37,7 +37,7 @@ class Form extends React.Component {
               <div className='inline fields'>
                 <input type='date' name='date' value={date} onChange={(event) => this.handleFormChange(event)}/>
                 <input type='text' name='title' placeholder='Title' value={title} onChange={(event) => this.handleFormChange(event)}/>
-                <input type='text' name='location' placeholder='Locatio' value={location} onChange={(event) => this.handleFormChange(event)}/>
+                <input type='text' name='location' placeholder='Location' value={location} onChange={(event) => this.handleFormChange(event)}/>
                 <input type='text' name='description' placeholder='Description' value={description} onChange={(event) => this.handleFormChange(event)}/>
                 <input type='text' name='imageURL' placeholder='ImageURL' value={imageURL} onChange={(event) => this.handleFormChange(event)}/>
                 <input type='number' name='price' placeholder='Price' value={price} onChange={(event) => this.handleFormChange(event)}/>

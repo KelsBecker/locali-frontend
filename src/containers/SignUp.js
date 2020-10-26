@@ -16,23 +16,25 @@ class SignUp extends React.Component {
 
   //getting a 400 error that param is missing 
   //work to fix in backend
-  submitCreateAccount = (event) => {
+  createAccount = (event) => {
     event.preventDefault()
     let newUser = {
-      name: this.state.name,
-      image_url: this.state.image,
-      bio: '',
-      username: this.state.username,
-      password: this.state.password
+      user: {
+        name: this.state.name,
+        image_url: this.state.image,
+        bio: '',
+        username: this.state.username,
+        password: this.state.password
+      }
     }
     console.log(newUser)
     // fetch('http://localhost:3000/users', {
     //   method: 'POST',
     //   header: {
-    //     'Accept': 'application/json',
-    //     'Content-Type': 'application/json'
+    //     'Content-Type': 'application/json',
+    //     'Accept': 'application/json'
     //   },
-    //   body: JSON.stringify(newUser)
+    //   body: JSON.stringify(newUser) 
     // })
     // .then(response => response.json())
     // .then(user => console.log(user))
@@ -46,7 +48,7 @@ class SignUp extends React.Component {
                 <h3>
                   <b>Sign Up</b>
                 </h3>
-                <form onSubmit={(event) => this.submitCreateAccount(event)}>
+                <form onSubmit={(event) => this.createAccount(event)}>
                   <label>Name</label>
                   <input type='text' className='SignUpTextBox' name='name' autoFocus 
                   value={this.state.name} 
